@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import WeatherByHour from "./components/WeatherByHour/WeatherByHour";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route exact path='/' element={
+          <WeatherByHour
+            hour="1639859451"
+            iconId="04n"
+            temp="7.42"
+            sunrise='1639814528'
+            sunset='1639842732' />
+        } />
+        {/* <Route path='/' element={} /> */}
+        {/* <Route path='/' element={} /> */}
+      </Routes>
+    </Router>
   );
 }
 

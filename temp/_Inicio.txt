@@ -1,0 +1,35 @@
+,-------,
+| rafce |
+'-------'
+
+1. Crear proyecto React
+2. Crear routing (https://v5.reactrouter.com/web/guides/quick-start)
+3. Crear paginas
+4. Agregar Bootstrap(https://getbootstrap.com/) <<< react-bootstrap??? >>>
+5. Mirar documentacion API (https://openweathermap.org/api)
+
+===========================================================================
+
+HORA 
+1- Si la hora es ahora, en vez de poner la hora ... pones Now
+2- Si la hora no es ahora, poner la hora q viene en el request
+ 
+ICONO
+https://openweathermap.org/weather-conditions 
+1- Mostrar icono de acuerdo al id o icon value del objeto wheather
+
+TEMPERATURA
+1- Mostrar la temperatura redondeada a entero unicamente
+
+PROBAR
+1- Que apareza Now en la hora
+2- Que aparezca la hora cuando nos Now
+3- Que muestre distintos iconos
+4- Si la hora coincide con el sunset/sunrise no mostras la temparutra y pones la palabra q corresponda
+
+<WeatherByHour param1="1" param2="2" param3="3"></WeatherByHour>
+<WeatherByHour param1="4" param2="5" param3="7"></WeatherByHour>
+<WeatherByHour param1="5" param2="8" param3="9"></WeatherByHour>
+
+===========================================================================
+
